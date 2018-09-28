@@ -28,6 +28,19 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml
 
+PRODUCT_PACKAGES += \
+    gralloc.exynos3
+
+PRODUCT_PACKAGES += \
+    libion \
+    libfimg
+
+# IPv6
+PRODUCT_PACKAGES += \
+    ebtables \
+    ethertypes \
+    libebtc
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.primary.universal3475 \
@@ -39,6 +52,15 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     power.universal3475
+
+# Lights
+PRODUCT_PACKAGES += \
+    lights.universal3475
+
+# Offmode charger
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    cm_charger_res_images
 
 # System properties
 -include $(LOCAL_PATH)/system_prop.mk
