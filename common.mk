@@ -26,7 +26,9 @@ PRODUCT_PACKAGES += \
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
-    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml
+    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
+    frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
+    frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml
 
 PRODUCT_PACKAGES += \
     gralloc.exynos3
@@ -40,6 +42,19 @@ PRODUCT_PACKAGES += \
     ebtables \
     ethertypes \
     libebtc
+
+# WiFi
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
+    $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
+
+PRODUCT_PACKAGES += \
+    hostapd \
+    libnetcmdiface \
+    macloader \
+    wifiloader \
+    wpa_supplicant \
+    wpa_supplicant.conf
 
 # Audio
 PRODUCT_PACKAGES += \
