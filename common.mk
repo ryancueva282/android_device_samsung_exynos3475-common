@@ -56,7 +56,6 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
-# Audio
 PRODUCT_PACKAGES += \
     audio.primary.universal3475 \
     audio.a2dp.default \
