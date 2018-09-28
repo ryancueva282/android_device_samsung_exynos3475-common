@@ -23,6 +23,10 @@ TARGET_BOOTANIMATION_HALF_RES := true
 PRODUCT_PACKAGES += \
     dtbhtoolExynos
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml
+
 # call Samsung LSI board support package
 $(call inherit-product, hardware/samsung_slsi-cm/exynos3475/exynos3475.mk)
 $(call inherit-product, hardware/samsung_slsi-cm/exynos5/exynos5.mk)
