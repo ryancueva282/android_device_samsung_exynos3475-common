@@ -25,7 +25,19 @@ PRODUCT_PACKAGES += \
 
 # Permissions
 PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml
+
+# Audio
+PRODUCT_PACKAGES += \
+    audio.primary.universal3475 \
+    audio.a2dp.default \
+    audio.usb.default \
+    audio.r_submix.default \
+    libtinycompress
+
+# System properties
+-include $(LOCAL_PATH)/system_prop.mk
 
 # call Samsung LSI board support package
 $(call inherit-product, hardware/samsung_slsi-cm/exynos3475/exynos3475.mk)

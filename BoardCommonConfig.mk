@@ -52,5 +52,8 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_HAVE_SAMSUNG_BLUETOOTH := true
 BOARD_CUSTOM_BT_CONFIG := $(LOCAL_PATH)/bluetooth/libbt_vndcfg.txt
 
+# Samsung HALs
+TARGET_AUDIOHAL_VARIANT := samsung
+
 # Inherit from the proprietary version
 -include vendor/samsung/exynos3475-common/BoardConfigVendor.mk
