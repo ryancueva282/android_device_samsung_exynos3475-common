@@ -60,5 +60,30 @@ TARGET_POWERHAL_VARIANT := samsung
 BOARD_HARDWARE_CLASS += $(LOCAL_PATH)/cmhw
 BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
 
+# Samsung Camera
+BOARD_USE_SAMSUNG_CAMERAFORMAT_NV21 := true
+
+# Graphics
+NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
+
+# Samsung flags
+BOARD_HDMI_INCAPABLE := true
+BOARD_USES_SKIA_FIMGAPI := true
+BOARD_USES_SCALER := true
+BOARD_USE_STOREMETADATA := true
+BOARD_USE_METADATABUFFERTYPE := true
+BOARD_USE_DMA_BUF := true
+BOARD_USE_ANB_OUTBUF_SHARE := true
+BOARD_USE_IMPROVED_BUFFER := true
+BOARD_USE_NON_CACHED_GRAPHICBUFFER := true
+BOARD_USE_GSC_RGB_ENCODER := true
+BOARD_USE_CSC_HW := false
+BOARD_USE_QOS_CTRL := false
+BOARD_USE_S3D_SUPPORT := true
+BOARD_USE_VP8ENC_SUPPORT := true
+
+# Video scaling issue workaround
+TARGET_OMX_LEGACY_RESCALING := true
+
 # Inherit from the proprietary version
 -include vendor/samsung/exynos3475-common/BoardConfigVendor.mk
