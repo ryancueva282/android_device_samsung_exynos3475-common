@@ -64,6 +64,11 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     libtinycompress
 
+# Keys
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/keylayout/sec_touchkey.kl:/system/usr/keylayout/sec_touchkey.kl \
+    $(LOCAL_PATH)/configs/keylayout/gpio-keys.kl:/system/usr/keylayout/gpio-keys.kl
+
 # Power
 PRODUCT_PACKAGES += \
     power.universal3475
