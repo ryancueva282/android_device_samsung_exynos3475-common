@@ -16,6 +16,8 @@
 
 LOCAL_PATH := device/samsung/exynos3475-common
 
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 # Boot animation
 TARGET_BOOTANIMATION_HALF_RES := true
 
