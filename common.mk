@@ -36,6 +36,10 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     libtinycompress
 
+# Power
+PRODUCT_PACKAGES += \
+    power.universal3475
+
 # System properties
 -include $(LOCAL_PATH)/system_prop.mk
 
