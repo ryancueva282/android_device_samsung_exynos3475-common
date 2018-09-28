@@ -37,6 +37,10 @@ PRODUCT_PACKAGES += \
     libion \
     libfimg
 
+# MDNIE
+PRODUCT_PACKAGES += \
+    AdvancedDisplay
+
 # IPv6
 PRODUCT_PACKAGES += \
     ebtables \
