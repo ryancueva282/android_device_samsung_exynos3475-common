@@ -56,6 +56,10 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
+# Audio
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/audio/audio_policy.conf:system/etc/audio_policy.conf
+
 PRODUCT_PACKAGES += \
     audio.primary.universal3475 \
     audio.a2dp.default \
