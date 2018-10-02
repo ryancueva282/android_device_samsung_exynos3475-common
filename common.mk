@@ -25,6 +25,17 @@ TARGET_BOOTANIMATION_HALF_RES := true
 PRODUCT_PACKAGES += \
     dtbhtoolExynos
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.universal3475 \
+    init.baseband.rc \
+    init.rilchip.rc \
+    init.samsung.rc \
+    init.universal3475.rc \
+    init.universal3475.usb.rc \
+    init.wifi.rc \
+    ueventd.universal3475.rc
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
