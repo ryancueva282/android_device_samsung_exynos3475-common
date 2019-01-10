@@ -112,4 +112,4 @@ CHARGING_ENABLED_PATH := /sys/class/power_supply/battery/batt_lp_charging
 BOARD_SECCOMP_POLICY += $(LOCAL_PATH)/seccomp
 
 # Inherit from the proprietary version
--include vendor/samsung/exynos3475-common/BoardConfigVendor.mk
+#include vendor/samsung/exynos3475-common/BoardConfigVendor.mk
