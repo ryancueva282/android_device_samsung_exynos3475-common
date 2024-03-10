@@ -120,9 +120,5 @@ PRODUCT_PACKAGES += \
 # System properties
 -include $(LOCAL_PATH)/system_prop.mk
 
-# call Samsung LSI board support package
-$(call inherit-product, hardware/samsung_slsi-cm/exynos3475/exynos3475.mk)
-$(call inherit-product, hardware/samsung_slsi-cm/exynos5/exynos5.mk)
-
 # call the proprietary setup
 #$(call inherit-product, vendor/samsung/exynos3475-common/exynos3475-common-vendor.mk)
