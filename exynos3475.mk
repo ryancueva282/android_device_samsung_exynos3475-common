@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Include proprietary blobs
 $(call inherit-product-if-exists, vendor/samsung/exynos3475-common/exynos3475-common-vendor.mk)
 
-LOCAL_PATH := device/samsung/msm8916-common
+LOCAL_PATH := device/samsung/exynos3475-common
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
